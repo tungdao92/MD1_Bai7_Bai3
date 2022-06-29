@@ -84,12 +84,17 @@
 
 <script>
     function numBer(a) {
-        document.getElementById('hienthi').value += a
+        document.getElementById('hienthi').value +=a
+
+        // value +=a Tiếp tục nhận thêm giá trị của a
     }
 
     function ketQua() {
         let vao = document.getElementById('hienthi').value
         let ketqua = eval(vao)
+
+        // hàm eval() có chức năng tính toán biểu thức toán học hoặc thức thi mã lệnh mà mình truyền vào
+
         document.getElementById('hienthi').value = ketqua
 
     }
